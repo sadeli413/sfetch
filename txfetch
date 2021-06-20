@@ -25,26 +25,13 @@ sh="$(basename $SHELL)"
 
 # Get Terminal Emulator
 # https://github.com/dylanaraps/neofetch/blob/master/neofetch
-trim() {
-    set -f
-    # shellcheck disable=2048,2086
-    set -- $*
-    printf '%s\n' "${*//[[:space:]]/}"
-    set +f
-}
-get_ppid() {
-    ppid="$(grep -i -F "PPid:" "/proc/${1:-$PPID}/status")"
-    ppid="$(trim "${ppid/PPid:}")"
-    printf "%s" "$ppid"
-}
-get_process_name() {
-    name="$(< "/proc/${1:-$PPID}/comm")"
-    printf "%s" "$name"
-}
 get_term(){
-    parent="$(get_ppid "$parent")"
-    name="$(get_process_name "$parent")"
-    term="${name##*/}"
+    ppid="$(grep -i -F "PPid:" "/proc/${1:-$PPID}/status")"
+    set -f
+    set -- "${ppid/PPid:}"
+    ppid=$(echo "${*//[[:space:]]/}")
+    set +f
+    term="$(< "/proc/${ppid:-$PPID}/comm")"
     echo $term
 }
 
