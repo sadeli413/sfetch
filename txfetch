@@ -21,19 +21,11 @@ kr="$(uname -r)"
 pk="$(pacman -Q | wc -l)"
 
 # Get shell
-sh="$(basename $SHELL)"
+sh=$(basename "$SHELL")
 
 # Get Terminal Emulator
-# https://github.com/dylanaraps/neofetch/blob/master/neofetch
-get_term(){
-    ppid="$(grep -i -F "PPid:" "/proc/${1:-$PPID}/status")"
-    set -f
-    set -- "${ppid/PPid:}"
-    ppid=$(echo "${*//[[:space:]]/}")
-    set +f
-    term="$(< "/proc/${ppid:-$PPID}/comm")"
-    echo $term
-}
+# https://www.reddit.com/r/okbuddylinux/comments/n7mj69/when_the_linux_is_sus/
+tm=$(ps -p $(ps -o ppid= -p $PPID) -o comm=)
 
 # Get window manager
 # https://github.com/dylanaraps/neofetch/blob/master/neofetch
@@ -63,7 +55,7 @@ echo -e "${CYAN}      /\       ${MAGENTA}  os  ${WHITE}${os}"
 echo -e "${CYAN}     /  \      ${YELLOW}  kr  ${WHITE}${kr}"
 echo -e "${CYAN}    /\   \     ${BLUE}  pk  ${WHITE}${pk}"
 echo -e "   /      \    ${RED}  sh  ${WHITE}${sh}"
-echo -e "  /   ,,   \   ${CYAN}😸 tm  ${WHITE}$(get_term)"
+echo -e "  /   ,,   \   ${CYAN}😸 tm  ${WHITE}${tm}"
 echo -e " /   |  |  -\  ${GREEN}  wm  ${WHITE}$(get_wm)"
 echo -e "/_-''    ''-_\ $(get_song)"
 echo
