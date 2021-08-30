@@ -1,8 +1,7 @@
-# txfetch
+# sfetch
 
 - Heavily ~~copied from~~ inspired by [rxfetch](https://github.com/Mangeshrex/rxfetch-) and [neofetch](https://github.com/dylanaraps/neofetch)
-- System fetch bash script for Arch Linux only (for now). 
-- The "tx" in "txfetch" stands for "toast", not "transmit".
+- System fetch bash script for Arch Linux. 
 
 ## Screenshots
 
