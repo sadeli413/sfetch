@@ -25,7 +25,7 @@ sh="$(basename "$SHELL")"
 
 # Get Terminal Emulator
 # https://www.reddit.com/r/okbuddylinux/comments/n7mj69/when_the_linux_is_sus/
-tm="$(ps -p "$(ps -o ppid= -p $PPID)" -o comm=)"
+tm="$(ps -p $(ps -o ppid= -p $PPID) -o comm=)"
 
 # Get window manager
 # https://github.com/dylanaraps/neofetch/blob/master/neofetch
