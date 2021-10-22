@@ -51,12 +51,12 @@ get_song() {
 
 # Print the info to the screen
 echo
-echo -e "${CYAN}      /\       ${MAGENTA}  os  ${WHITE}${os}"
-echo -e "${CYAN}     /  \      ${YELLOW}  kr  ${WHITE}${kr}"
-echo -e "${CYAN}    /\   \     ${BLUE}  pk  ${WHITE}${pk}"
-echo -e "   /      \    ${RED}  sh  ${WHITE}${sh}"
-echo -e "  /   ,,   \   ${CYAN}😸 tm  ${WHITE}${tm}"
-echo -e " /   |  |  -\  ${GREEN}  wm  ${WHITE}$(get_wm)"
-echo -e "/_-''    ''-_\ $(get_song)"
+echo -e "${GREEN}       \\\\\\         ${MAGENTA}  os  ${WHITE}${os}"
+echo -e "${BLUE}  .-'\`\`\`^\`\`\`'-.   ${YELLOW}  kr  ${WHITE}${kr}"
+echo -e "${BLUE} /   ${YELLOW}/\\ ${BLUE}_ ${YELLOW}/\\ ${BLUE}  \\  ${BLUE}  pk  ${WHITE}${pk}"
+echo -e "${BLUE}J    ^^ V ^^    L ${RED}  sh  ${WHITE}${sh}"
+echo -e "${BLUE}|   ${YELLOW}\\\\\\/\\_/\\//${BLUE}   | ${CYAN}😸 tm  ${WHITE}${tm}"
+echo -e "${BLUE} \\   ${YELLOW}\\\\/\\_/\\/${BLUE}   /  ${GREEN}  wm  ${WHITE}$(get_wm)"
+echo -e "${BLUE}  \`'-.......-'\`   $(get_song)"
 echo
-echo -e "               ${YELLOW}󰮯  · · · ${MAGENTA}  ${CYAN}  ${RED}  ${BLUE}  ${GREEN} ${RESET}"
+echo -e "                  ${YELLOW}󰮯  · · · ${MAGENTA}  ${CYAN}  ${RED}  ${BLUE}  ${GREEN} ${RESET}"

@@ -5,15 +5,7 @@
 
 ## Screenshots
 
-Have some screenshots, even though these are all the same.
-
-![toast](screenshots/toast.png)
-
-![dracula](screenshots/dracula.png)
-
-![classic](screenshots/classic.png)
-
-![melt](screenshots/melt.png)
+![halloween](screenshots/halloween.png)
 
 ## Glyphs and Dependencies
 
