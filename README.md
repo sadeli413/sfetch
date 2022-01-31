@@ -18,5 +18,5 @@ Have some screenshots, even though these are all the same.
 ## Glyphs and Dependencies
 
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) (glyphs)
-- [ttf-material-design-icons](https://github.com/Mangeshrex/rxfetch-/tree/main/ttf-material-design-icons) (glyphs)
+- [ttf-material-design-icons](https://aur.archlinux.org/packages/ttf-material-design-icons-git)<sup>AUR</sup> (glyphs)
 - [playerctl](https://github.com/altdesktop/playerctl) (music player)
