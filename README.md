@@ -1,19 +1,13 @@
 # sfetch
 
-- Heavily ~~copied from~~ inspired by [rxfetch](https://github.com/Mangeshrex/rxfetch-) and [neofetch](https://github.com/dylanaraps/neofetch)
+- Heavily ~~copied from~~ inspired by [rxfetch](https://github.com/Mangeshrex/rxfetch) and [neofetch](https://github.com/dylanaraps/neofetch)
 - System fetch bash script for Arch Linux. 
 
 ## Screenshots
 
 Have some screenshots, even though these are all the same.
 
-![toast](screenshots/toast.png)
-
-![dracula](screenshots/dracula.png)
-
-![classic](screenshots/classic.png)
-
-![melt](screenshots/melt.png)
+![catppuccin](screenshots/catppuccin.png)
 
 ## Glyphs and Dependencies
 

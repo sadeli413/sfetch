@@ -39,13 +39,13 @@ get_wm() {
     echo -e "$wm"
 }
 
-# Get song
-get_song() {
-    song="$(playerctl metadata --format '{{ artist }} | {{ title }}' 2>/dev/null)"
-    if [[ -z $song ]]; then
-        echo " "
+# Get the init
+# https://github.com/Mangeshrex/rxfetch
+get_init() {
+    if [ -f '/sbin/openrc' ]; then
+        echo 'openrc'
     else
-        echo -e "${MAGENTA}  mu  ${WHITE}$song"
+        cut -d ' ' -f 1 /proc/1/comm
     fi
 }
 
@@ -57,6 +57,6 @@ echo -e "${CYAN}    /\`'.,\     ${BLUE}  pk  ${WHITE}${pk}"
 echo -e "${CYAN}   /     ',    ${RED}  sh  ${WHITE}${sh}"
 echo -e "${CYAN}  /      ,\`\   ${CYAN}😸 tm  ${WHITE}${tm}"
 echo -e "${CYAN} /   ,.'\`.  \  ${GREEN}  wm  ${WHITE}$(get_wm)"
-echo -e "${CYAN}/.,'\`     \`'.\ $(get_song)"
+echo -e "${CYAN}/.,'\`     \`'.\ ${MAGENTA}  in  ${WHITE}$(get_init)"
 echo
 echo -e "               ${YELLOW}󰮯  · · · ${MAGENTA}  ${CYAN}  ${RED}  ${BLUE}  ${GREEN} ${RESET}"
