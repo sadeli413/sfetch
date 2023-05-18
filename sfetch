@@ -53,10 +53,10 @@ get_song() {
 echo
 echo -e "${CYAN}      /\       ${MAGENTA}  os  ${WHITE}${os}${RESET}"
 echo -e "${CYAN}     /  \      ${YELLOW}  kr  ${WHITE}${kr}${RESET}"
-echo -e "${CYAN}    /\   \     ${BLUE}  pk  ${WHITE}${pk}${RESET}"
+echo -e "${CYAN}    /\   \     ${BLUE}󰏓  pk  ${WHITE}${pk}${RESET}"
 echo -e "   /      \    ${RED}  sh  ${WHITE}${sh}${RESET}"
-echo -e "  /   ,,   \   ${CYAN}  tm  ${WHITE}${tm}${RESET}"
+echo -e "  /   ,,   \   ${CYAN}󰄛  tm  ${WHITE}${tm}${RESET}"
 echo -e " /   |  |  -\  ${GREEN}  wm  ${WHITE}$(get_wm)${RESET}"
 echo -e "/_-''    ''-_\ $(get_song)${RESET}"
 echo
-echo -e "               ${YELLOW}󰮯  · · · ${MAGENTA}  ${CYAN}  ${RED}  ${BLUE}  ${GREEN} ${RESET}"
+echo -e "               ${YELLOW}󰮯  · · · ${MAGENTA}󰊠  ${CYAN}󰊠  ${RED}󰊠  ${BLUE}󰊠  ${GREEN}󰊠 ${RESET}"
